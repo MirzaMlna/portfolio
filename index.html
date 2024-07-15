@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="bootstrap-5.3.3\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="css\styles.css" />
+    <!-- Bootstrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-mirza-primary sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#homeSection"
+                ><i class="bi bi-house"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutSection">
+                <i class="bi bi-person-lines-fill"></i> About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resumeSection"
+                ><i class="bi bi-file-text"></i> Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificateSection"
+                ><i class="bi bi-award"></i> Certificate</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projectSection">
+                <i class="bi bi-code-square"></i> My Project</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Social Media
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.instagram.com/mirza_mlna/"
+                    ><i class="bi bi-instagram"></i> Instagram</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-linkedin"></i> LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://github.com/MirzaMlna"
+                    ><i class="bi bi-github"></i> GitHub</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      id="homeSection"
+      class="vh-100 hero-bg d-flex align-items-center justify-content-center shadow mb-5 home-section"
+    >
+      <div class="row w-100">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <div class="display-6 text-light fw-bold">Muhammad Mirza Maulana</div>
+          <br />
+          <div class="text-light fs-3 fw-light">
+            <span id="typewriter" class="font-monospace"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutSection" class="mx-2 mx-lg-5 mb-5 about-section">
+      <div class="display-6 fw-bold text-start mb-5">
+        <i class="bi bi-person-lines-fill text-mirza-primary"></i> About Me
+        <div class="section-title-line"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 mb-4 mb-lg-0">
+          <img
+            src="assets/images/mirza.webp"
+            class="img-fluid rounded shadow"
+            alt="Mirza's Photo"
+          />
+        </div>
+        <div class="col-md-9">
+          <!-- List 1 -->
+          <div class="row">
+            <div class="col-md-6">
+              <ul style="list-style-type: none; padding: 0">
+                <li class="mb-4 fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> Birthday: </span>
+                  22 May 2004
+                </li>
+                <li class="mb-4 fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> Phone: </span>
+                  +62 85814313224
+                </li>
+                <li class="fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> City: </span>
+                  Banjarmasin, Indonesia
+                </li>
+              </ul>
+            </div>
+            <!-- List 2 -->
+            <div class="col-md-6">
+              <ul style="list-style-type: none; padding: 0">
+                <li class="mb-4 fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> Age: </span>
+                  20
+                </li>
+                <li class="mb-4 fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> Degree: </span>
+                  Beginner
+                </li>
+                <li class="fs-5">
+                  <i class="bi bi-caret-right text-mirza-primary"></i>
+                  <span class="fw-bold"> Email: </span>
+                  mirzamaulana713@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="text-mirza-primary" />
+          <p class="fs-5" style="text-indent: 30px; text-align: justify">
+            Hello! My name is <b> Muhammad Mirza Maulana</b>, and I am a person
+            <b>enthusiastic front-end developer</b>. I have learned various
+            things technologies, including <b>Laravel</b> for web development
+            and <b>Flutter</b> for mobile apps. Become a front-end developer
+            gives me great satisfaction because it allows me to combine
+            creativity with technology, crafts that are visually appealing and
+            easy to use interface. I am proud to have freelance experience and
+            several achievements at the local level and national level. I would
+            love to work with a team that shares my interest in creating
+            extraordinary digital experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resumeSection" class="mx-2 mx-lg-5 mb-5 resume-section">
+      <div class="display-6 fw-bold text-start mb-5">
+        <i class="bi bi-file-text text-mirza-primary"></i> Resume
+        <div class="section-title-line"></div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-5 mb-4">
+          <h3>
+            <i class="bi bi-caret-right text-mirza-primary"> </i>Team &
+            Organization Experience
+          </h3>
+          <ul>
+            <li class="fw-bold">
+              Head of the Opinion and Media Division (2023 - 2024)
+            </li>
+            <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
+            <li class="fw-bold">
+              Chief Executive of the Graphic Design Workshop (2024)
+            </li>
+            <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
+            <li class="fw-bold">
+              GEMASTIK XV Competition, Software Programming Division (2022)
+            </li>
+            <p>
+              Indonesian Talent Development Center (BPTI), National Achievement
+              Center (PUSPRESNAS), Secretariat General, Ministry of Education,
+              Culture, Research and Technology.
+            </p>
+            <li class="fw-bold">
+              Mobile Front End Developer At KMI EXPO XIV, Technology used:
+              Flutter (2023)
+            </li>
+            <p>Directorate General of Higher Education.</p>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>
+            <i class="bi bi-caret-right text-mirza-primary"> </i>Work Experience
+          </h3>
+          <ul>
+            <li class="fw-bold">Partai Amanat Nasional (2023 - Present)</li>
+            <p>
+              As A Team of IT experts, Create A Quick Count Application Using
+              Laravel
+            </p>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h3>
+            <i class="bi bi-caret-right text-mirza-primary"> </i>Personal
+            Experience
+          </h3>
+          <ul>
+            <li class="fw-bold">
+              Stand Up Comedy in Front of 4000 Eyes When Being a New Student In
+              an Introduction to Campus Life for New Students (2022)
+            </li>
+            <p>Introduction to Campus Life for New Students (PKKMB)</p>
+            <li class="fw-bold">Project Jockey Freelancer (2022 - Present)</li>
+            <p>Mirza Project And Assignment</p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h3><i class="bi bi-caret-right text-mirza-primary"> </i>Skills</h3>
+          <ul>
+            <li>Public Speaking</li>
+            <li>HTML/CSS</li>
+            <li>PHP, JavaScript, Dart</li>
+            <li>Bootstrap, Tailwind</li>
+            <li>Laravel, Flutter</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>
+            <i class="bi bi-caret-right text-mirza-primary"> </i>Achievement
+          </h3>
+          <ul>
+            <li class="fw-bold">Top 20 Stand Up Kompetition. (2023)</li>
+            <p>KMI EXPO XIV - Bali.</p>
+            <li class="fw-bold">
+              Won 5th place out of 273 Indonesian campuses in the national "KMI
+              AWARD" Digital Business category, making campus history as the
+              first to win this event. (2023)
+            </li>
+            <p>KMI EXPO XIV - Bali.</p>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h3>
+            <i class="bi bi-caret-right text-mirza-primary"> </i>Education
+          </h3>
+          <ul>
+            <li class="fw-bold">Senior High School (2019 - 2022)</li>
+            <p>SMAN 11 Banjarmasin (Mathematics and Natural Sciences)</p>
+            <li class="fw-bold">University (2022 - Present)</li>
+            <p>
+              Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari
+              (Bachelor's Degree (S1) Informatics Engineering)
+            </p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section
+      id="certificateSection"
+      class="mx-2 mx-lg-5 mb-5 certificate-section"
+    >
+      <div class="display-6 fw-bold text-start mb-5">
+        <i class="bi bi-award text-mirza-primary"></i> Certificates and Gallery
+        <div class="section-title-line"></div>
+      </div>
+
+      <details>
+        <h3 class="fw-bold mt-2 text-mirza-primary">Certificate</h3>
+        <summary class="fw-bold fs-4">View Certificates</summary>
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/certificates/Tambalin.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/certificates/P2MW.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/certificates/KMI EXPO.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/certificates/Gemastik XV 2022.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img src="" class="img-fluid shadow" alt="" />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0s">
+            <img src="" class="img-fluid shadow" alt="" />
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <h3 class="fw-bold mt-2 text-mirza-primary">Gallery</h3>
+        <summary class="fw-bold fs-4">View Gallery</summary>
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/Nilai99.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/PialaTeam.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/PialaSolo.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/GemastikBem.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/P2MMW.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0s">
+            <img
+              src="assets/gallery/KDKCO.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/Graphic Design Workshop.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <img
+              src="assets/gallery/StandUpBali.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0s">
+            <img
+              src="assets/gallery/StandUpPKKMB.jpg"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projectSection" class="mx-2 mx-lg-5 mb-5 project-section">
+      <div class="display-6 fw-bold text-start mb-5">
+        <i class="bi bi-code-square text-mirza-primary"></i> My Project
+        <div class="section-title-line"></div>
+      </div>
+      <h1>Coming Soon... I'm too lazy to make project documentation :v</h1>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h5>About Me</h5>
+            <p>
+              I am an ambitious student who has some historic achievements and
+              good experiences
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Me</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="mailto:mirzamaulana713.com" class="text-light"
+                  >mirzamaulana713.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+6285814313224" class="text-light"
+                  >+62 858 1431 3224</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Me</h5>
+            <a
+              href="https://www.instagram.com/mirza_mlna/"
+              class="text-light me-2"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-light me-2"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="https://github.com/MirzaMlna" class="text-light me-2"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2024 Muhammad Mirza Maulana. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="bootstrap-5.3.3\dist\js\bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</html>
