@@ -7,6 +7,7 @@ import ResumePage from "./pages/resume/ResumePage";
 import ScrollToTop from "./components/ScrollToTop";
 import CertificatesSection from "./pages/certificates/sections/CertificatesSection";
 import GallerySection from "./pages/gallery/sections/GallerySection";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <AppNavbar />
         <ScrollToTop />
         <Routes>
-          <Route path={"/portfolio"} element={<HomePage />}></Route>
+          <Route path={"*"} element={<NotFound />}></Route>
+          <Route path={"/"} element={<HomePage />}></Route>
           <Route path={"/resume"} element={<ResumePage />}></Route>
           <Route
             path={"/certificates"}
