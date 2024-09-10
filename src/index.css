@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --mirza-primary: #ea580c;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.text-mirza-primary {
+  color: var(--mirza-primary);
+}
+.bg-mirza-primary {
+  background-color: var(--mirza-primary);
+}
+/* GeneralStart */
+.section-title-line {
+  margin-top: 10px;
+  border: 3px solid var(--mirza-primary);
+  width: 175px;
+  border-radius: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* GeneralEnd */
+
+/* HeroSectionStart */
+#HeroSection {
+  background-image: url(../public/hero-bg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#typewriter {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+/* HeroSectionEnd */
