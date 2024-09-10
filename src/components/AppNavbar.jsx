@@ -5,7 +5,7 @@ import HoverScaleWrapper from "./motionWrappers/HoverScaleWrapper";
 
 const AppNavbar = () => {
   const navigate = useNavigate();
-  const homePage = () => navigate("/");
+  const homePage = () => navigate("/portfolio");
   const resumePage = () => navigate("/resume");
   const certificatesPage = () => navigate("/certificates");
   const galleryPage = () => navigate("/gallery");

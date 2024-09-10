@@ -15,7 +15,7 @@ function App() {
         <AppNavbar />
         <ScrollToTop />
         <Routes>
-          <Route path={"/"} element={<HomePage />}></Route>
+          <Route path={"/portfolio"} element={<HomePage />}></Route>
           <Route path={"/resume"} element={<ResumePage />}></Route>
           <Route
             path={"/certificates"}

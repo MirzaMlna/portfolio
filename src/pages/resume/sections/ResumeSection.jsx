@@ -127,7 +127,11 @@ const ResumeSection = () => {
         <Row className="my-3">
           <Col className="d-flex justify-content-start">
             <HoverScaleWrapper>
-              <Button variant="dark" size="lg" onClick={() => navigate("/")}>
+              <Button
+                variant="dark"
+                size="lg"
+                onClick={() => navigate("/portfolio")}
+              >
                 &larr; Back
               </Button>
             </HoverScaleWrapper>
