@@ -14,7 +14,7 @@ const AboutSection = () => {
         <Col md={3} className="mb-4 mb-lg-0">
           <FadeInWrapper>
             <Image
-              src="./mirza.webp"
+              src="mirza.webp"
               alt="Mirza's Photo"
               className="shadow"
               fluid
