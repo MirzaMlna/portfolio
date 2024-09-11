@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const texts = ["Front End Developer", "Freelancer"];
+const texts = ["Front End Developer", "Freelancer", "Graphic Designer"];
 const typingSpeed = 150;
 const deletingSpeed = 100;
 const pauseBetweenWords = 1000;

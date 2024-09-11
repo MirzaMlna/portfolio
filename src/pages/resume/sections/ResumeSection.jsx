@@ -14,43 +14,41 @@ const ResumeSection = () => {
         <Row className="mb-4">
           <Col md={5} className="mb-4">
             <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Team &
-              Organization Experience
+              <i className="bi bi-caret-right text-mirza-primary"> </i>
+              Pengalaman Tim & Organisasi
             </h3>
             <ul>
               <li className="fw-bold">
-                Head of the Opinion and Media Division (2023 - 2024)
+                Kepala Divisi Opini & Media (2023 - 2024)
               </li>
               <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
               <li className="fw-bold">
-                Chief Executive of the Graphic Design Workshop (2024)
+                Ketua Pelaksana Graphic Design Workshop (2024)
               </li>
               <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
               <li className="fw-bold">
-                GEMASTIK XV Competition, Software Programming Division (2022)
+                Tim Forger - GEMASTIK XV. Divisi Pemrograman Perangkat Lunak
+                (2022)
+              </li>
+              <p>Universitas Brawijaya</p>
+              <li className="fw-bold">
+                Tambalin - Sebagai Mobile Front End Developer (2023)
               </li>
               <p>
-                Indonesian Talent Development Center (BPTI), National
-                Achievement Center (PUSPRESNAS), Secretariat General, Ministry
-                of Education, Culture, Research and Technology.
+                Direktorat Jenderal Pendidikan Tinggi, Riset dan Teknologi
+                Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
+                Republik Indonesia (Kemendikbudristek RI).
               </p>
-              <li className="fw-bold">
-                Mobile Front End Developer At KMI EXPO XIV, Technology used:
-                Flutter (2023)
-              </li>
-              <p>Directorate General of Higher Education.</p>
             </ul>
           </Col>
 
           <Col md={4} className="mb-4">
             <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Work
-              Experience
+              <i className="bi bi-caret-right text-mirza-primary"> </i>
+              Pengalaman Kerja
             </h3>
             <ul>
-              <li className="fw-bold">
-                Partai Amanat Nasional (2023 - Present)
-              </li>
+              <li className="fw-bold">Partai Amanat Nasional (2023)</li>
               <p>
                 As A Team of IT experts, Create A Quick Count Application Using
                 Laravel
@@ -60,17 +58,17 @@ const ResumeSection = () => {
 
           <Col md={3} className="mb-4">
             <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Personal
-              Experience
+              <i className="bi bi-caret-right text-mirza-primary"> </i>
+              Pengalaman Pribadi
             </h3>
             <ul>
               <li className="fw-bold">
-                Stand Up Comedy in Front of 4000 Eyes When Being a New Student
-                In an Introduction to Campus Life for New Students (2022)
+                Stand Up Comedy di Depan 4000 Mata Saat Menjadi Mahasiswa Baru
+                Dalam Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (2022)
               </li>
-              <p>Introduction to Campus Life for New Students (PKKMB)</p>
+              <p>Pengenalan Kehidupan Kampus Mahasiswa Baru (PKKMB) 2022</p>
               <li className="fw-bold">
-                Project Jockey Freelancer (2022 - Present)
+                Freelancer Projek Aplikasi & Tugas (2022 - Present)
               </li>
               <p>Mirza Project And Assignment</p>
             </ul>
@@ -80,7 +78,7 @@ const ResumeSection = () => {
         <Row>
           <Col md={4} className="mb-4">
             <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Skills
+              <i className="bi bi-caret-right text-mirza-primary"> </i>Keahlian
             </h3>
             <ul>
               <li>Public Speaking</li>
@@ -94,15 +92,16 @@ const ResumeSection = () => {
           <Col md={4} className="mb-4">
             <h3>
               <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Achievement
+              Pencapaian
             </h3>
             <ul>
-              <li className="fw-bold">Top 20 Stand Up Competition (2023)</li>
+              <li className="fw-bold">20 Besar Stand Up Competition (2023)</li>
               <p>KMI EXPO XIV - Bali.</p>
               <li className="fw-bold">
-                Won 5th place out of 273 Indonesian campuses in the national
-                &raquo;KMI AWARD&laquo; Digital Business category, making campus
-                history as the first to win this event. (2023)
+                Meraih juara ke-5 dari 273 kampus Indonesia dalam ajang
+                &raquo;KMI AWARD&laquo; kategori Bisnis Digital tingkat
+                nasional, sekaligus mengukir sejarah UNISKA untuk pertama
+                kalinya menjuarai ajang ini. (2023)
               </li>
               <p>KMI EXPO XIV - Bali.</p>
             </ul>
@@ -110,15 +109,16 @@ const ResumeSection = () => {
 
           <Col md={4} className="mb-4">
             <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Education
+              <i className="bi bi-caret-right text-mirza-primary"> </i>
+              Pendidikan
             </h3>
             <ul>
-              <li className="fw-bold">Senior High School (2019 - 2022)</li>
-              <p>SMAN 11 Banjarmasin (Mathematics and Natural Sciences)</p>
-              <li className="fw-bold">University (2022 - Present)</li>
+              <li className="fw-bold">Sekolah Menengah Atas (2019 - 2022)</li>
+              <p>SMAN 11 Banjarmasin (Matematika & IPA)</p>
+              <li className="fw-bold">Universitas (2022 - Present)</li>
               <p>
-                Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari
-                (Bachelor&lsquo;s Degree (S1) Informatics Engineering)
+                Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari (Sarjana
+                (S1) Teknik Informatika)
               </p>
             </ul>
           </Col>
@@ -128,7 +128,7 @@ const ResumeSection = () => {
           <Col className="d-flex justify-content-start">
             <HoverScaleWrapper>
               <Button variant="dark" size="lg" onClick={() => navigate("/")}>
-                &larr; Back
+                &larr; Kembali
               </Button>
             </HoverScaleWrapper>
           </Col>
@@ -140,7 +140,7 @@ const ResumeSection = () => {
                 size="lg"
                 onClick={() => navigate("/certificates")}
               >
-                Next Page &rarr;
+                Selanjutnya &rarr;
               </Button>
             </HoverScaleWrapper>
           </Col>

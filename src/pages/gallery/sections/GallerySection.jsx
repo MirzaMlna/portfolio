@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const GallerySection = () => {
   const navigate = useNavigate();
   return (
-    <AppSection id="GallerySection" icon="bi-image" title="Gallery">
+    <AppSection id="GallerySection" icon="bi-image" title="Galeri">
       <div className="vh-100">
         <Row className="my-3">
           <Col className="d-flex justify-content-start">

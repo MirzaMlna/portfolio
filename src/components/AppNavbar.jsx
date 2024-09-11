@@ -24,7 +24,7 @@ const AppNavbar = () => {
           <Nav className="mx-auto">
             <HoverScaleWrapper>
               <Nav.Link active onClick={homePage}>
-                Home
+                Beranda
               </Nav.Link>
             </HoverScaleWrapper>
             <HoverScaleWrapper>
@@ -34,22 +34,22 @@ const AppNavbar = () => {
             </HoverScaleWrapper>
             <HoverScaleWrapper>
               <Nav.Link active onClick={certificatesPage}>
-                Certificates
+                Sertifikat
               </Nav.Link>
             </HoverScaleWrapper>
             <HoverScaleWrapper>
               <Nav.Link active onClick={galleryPage}>
-                Gallery
+                Galeri
               </Nav.Link>
             </HoverScaleWrapper>
             <HoverScaleWrapper>
               <Nav.Link active onClick={projectsPage}>
-                My Projects
+                Projek Saya
               </Nav.Link>
             </HoverScaleWrapper>
           </Nav>
           <Nav className="ms-auto">
-            <NavDropdown active title="Social Media" id="appNavSocialDropdown">
+            <NavDropdown active title="Media Sosial" id="appNavSocialDropdown">
               <NavDropdown.Item>
                 <i className="bi bi-instagram"></i> Instagram
               </NavDropdown.Item>

@@ -9,7 +9,11 @@ const AboutSection = () => {
   const navigate = useNavigate();
 
   return (
-    <AppSection id="AboutSection" icon="bi-person-lines-fill" title="About">
+    <AppSection
+      id="AboutSection"
+      icon="bi-person-lines-fill"
+      title="Tentang Saya"
+    >
       <Row>
         <Col md={3} className="mb-4 mb-lg-0">
           <FadeInWrapper>
@@ -28,12 +32,12 @@ const AboutSection = () => {
               <ul style={{ listStyleType: "none", padding: 0 }}>
                 <li className="mb-4 fs-5">
                   <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> City: </span>
+                  <span className="fw-bold"> Kota: </span>
                   Banjarmasin, Indonesia
                 </li>
                 <li className="mb-4 fs-5">
                   <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> Age: </span>
+                  <span className="fw-bold"> Usia: </span>
                   20
                 </li>
               </ul>
@@ -55,16 +59,19 @@ const AboutSection = () => {
           </Row>
           <hr className="text-mirza-primary" />
           <p className="fs-5">
-            Hello👋 My name is <b>Muhammad Mirza Maulana</b>, and I am an{" "}
-            <b>enthusiastic front-end developer</b>. I have gained experience in
-            various technologies, including <b>Laravel and React Vite</b> for
-            web development, and <b>Flutter</b> for mobile app development.
-            Being a front-end developer brings me great satisfaction as it
-            allows me to blend creativity with technology, crafting visually
-            appealing and user-friendly interfaces. I take pride in my freelance
-            work and in the achievements I`ve earned at both local and national
-            levels. I am eager to collaborate with a team that shares my passion
-            for delivering exceptional digital experiences.
+            Halo👋 Nama saya <b>Muhammad Mirza Maulana</b>, dan saya adalah
+            seorang <b className="fst-italic">front-end developer</b> yang
+            antusias. Saya telah mendapatkan pengalaman dalam beberapa
+            teknologi, termasuk <b>Laravel dan React Vite</b> untuk pengembangan
+            web, serta <b>Flutter</b> untuk pengembangan aplikasi mobile.
+            Menjadi seorang developer front-end memberikan saya kepuasan yang
+            besar karena memungkinkan saya untuk menggabungkan kreativitas
+            dengan teknologi, menciptakan antarmuka yang menarik secara visual
+            dan ramah pengguna. Saya bangga dengan pekerjaan freelance saya dan
+            pencapaian yang telah saya raih di tingkat lokal dan nasional. Saya
+            sangat bersemangat untuk berkolaborasi dengan tim yang berbagi
+            semangat yang sama dalam menghadirkan pengalaman digital yang luar
+            biasa.
           </p>
         </Col>
       </Row>
@@ -75,7 +82,7 @@ const AboutSection = () => {
           className="my-3 mx-auto justify-content-end align-items-end d-flex"
           onClick={() => navigate("/resume")}
         >
-          Next Page &rarr;
+          Selanjutnya &rarr;
         </Button>
       </HoverScaleWrapper>
     </AppSection>

@@ -13,33 +13,33 @@ const CertificatesSection = () => {
     {
       cover: "./assets/certificates/cover/gemastik-xv.webp",
       certificate: "./assets/certificates/gemastik-xv.webp",
-      title: "GEMASTIK XV Certificate",
+      title: "Sertifikat GEMASTIK XV",
       caption:
-        "GEMASTIK is a national ICT competition by Indonesia's Ministry of Research and Technology, aimed at developing students' skills in areas like application development, graphic design, and cybersecurity.",
+        "GEMASTIK merupakan kompetisi TIK tingkat nasional yang diselenggarakan oleh Kementerian Riset dan Teknologi Indonesia untuk mengembangkan keterampilan mahasiswa di berbagai bidang seperti pengembangan aplikasi, desain grafis, dan keamanan siber.",
       year: "2022",
     },
     {
       cover: "./assets/certificates/cover/kmi-expo.webp",
       certificate: "./assets/certificates/kmi-expo.webp",
-      title: "KMI EXPO XIV Certificate",
+      title: "Sertifikat KMI EXPO XIV",
       caption:
-        "KMI Expo XIV 2023 at Ganesha University, Bali, is a platform for student entrepreneurs across Indonesia to compete, showcase products, and build networks. It fosters knowledge sharing, collaboration, and connections with investors, mentors, and industry experts.",
+        "KMI Expo XIV 2023 di Universitas Ganesha, Bali, merupakan wadah bagi para wirausahawan mahasiswa di seluruh Indonesia untuk berkompetisi, memamerkan produk, dan membangun jaringan. Ajang ini mendorong berbagi pengetahuan, kolaborasi, dan koneksi dengan investor, mentor, dan pakar industri.",
       year: "2023",
     },
     {
       cover: "./assets/certificates/cover/tambalin.webp",
       certificate: "./assets/certificates/tambalin.webp",
-      title: "KMI AWARD Certificate",
+      title: "Sertifikat KMI AWARD XIV",
       caption:
-        "The KMI Award recognizes students' efforts in P2MW 2023. Participants must showcase their main products at the KMI Expo XIV 2023. Judging will take place at each booth, organized by business category.",
+        "Penghargaan KMI merupakan bentuk pengakuan atas usaha mahasiswa dalam P2MW 2023. Peserta harus memamerkan produk utama mereka di KMI Expo XIV 2023. Penjurian akan dilakukan di setiap stan, yang disusun berdasarkan kategori bisnis.",
       year: "2023",
     },
     {
       cover: "./assets/certificates/cover/p2mw.webp",
       certificate: "./assets/certificates/p2mw.webp",
-      title: "Student Entrepreneurship Development Program (P2MW) Certificate",
+      title: "Sertifikat Program Pembinaan Mahasiswa Wirausaha (P2MW) 2023",
       caption:
-        "P2MW is a business development program for students who already have a business through development funding assistance and coaching by providing mentoring and business training (coaching) to P2MW student participants.",
+        "P2MW merupakan program pengembangan usaha bagi mahasiswa yang telah memiliki usaha melalui bantuan dana pengembangan dan pembinaan dengan memberikan pendampingan dan pelatihan usaha (coaching) kepada mahasiswa peserta P2MW.",
       year: "2023",
     },
   ];
@@ -58,8 +58,11 @@ const CertificatesSection = () => {
 
   return (
     <FadeInWrapper>
-      <AppSection id="CertificateSection" icon="bi-award" title="Certificates">
-        <i className={`fs-6 fw-bold `}>Scroll For More Certificates</i>
+      <AppSection id="CertificateSection" icon="bi-award" title="Sertifikat">
+        <i className={`fs-6 fw-bold `}>
+          Geser Untuk Sertifikat Lainnya atau Klik Untuk Menampilkan
+          Selengkapnya
+        </i>
         <Row className="px-lg-0 px-2 mt-2 overflow-x-scroll flex-nowrap">
           {certificates.map((certificate, index) => (
             <Col key={index} lg={4} md={6} sm={12} className="px-1">
@@ -117,7 +120,7 @@ const CertificatesSection = () => {
                 size="lg"
                 onClick={() => navigate("/resume")}
               >
-                &larr; Back
+                &larr; Kembali
               </Button>
             </HoverScaleWrapper>
           </Col>
@@ -127,9 +130,9 @@ const CertificatesSection = () => {
               <Button
                 variant="dark"
                 size="lg"
-                onClick={() => navigate("/next-page")}
+                onClick={() => navigate("/gallery")}
               >
-                Next Page &rarr;
+                Selanjutnya &rarr;
               </Button>
             </HoverScaleWrapper>
           </Col>

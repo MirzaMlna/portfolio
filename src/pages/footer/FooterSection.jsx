@@ -4,14 +4,14 @@ const FooterSection = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-md-4">
-            <h5>About Me</h5>
+            <h5>Tentang Saya</h5>
             <p>
-              I am an ambitious student who has some historic achievements and
-              good experiences
+              Saya adalah seorang pelajar ambisius yang memiliki beberapa
+              prestasi bersejarah dan pengalaman baik
             </p>
           </div>
           <div className="col-md-4">
-            <h5>Contact Me</h5>
+            <h5>Hubungi Saya</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="mailto:mirzamaulana713.com" className="text-light">
@@ -21,15 +21,18 @@ const FooterSection = () => {
             </ul>
           </div>
           <div className="col-md-4">
-            <h5>Follow Me</h5>
+            <h5>Mari Berteman</h5>
             <a
               href="https://www.instagram.com/mirza_mlna/"
               className="text-light me-2"
             >
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="#" className="text-light me-2">
-              <i className="bi bi-linkedin"></i>
+            <a
+              href="https://www.tiktok.com/@maulana.mirza"
+              className="text-light me-2"
+            >
+              <i className="bi bi-tiktok"></i>
             </a>
             <a href="https://github.com/MirzaMlna" className="text-light me-2">
               <i className="bi bi-github"></i>
