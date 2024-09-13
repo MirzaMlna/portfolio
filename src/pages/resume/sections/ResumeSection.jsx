@@ -110,7 +110,7 @@ const ResumeSection = () => {
           <Col md={4} className="mb-4">
             <h3>
               <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Pendidikan
+              Perguruan Tinggi
             </h3>
             <ul>
               <li className="fw-bold">Sekolah Menengah Atas (2019 - 2022)</li>
