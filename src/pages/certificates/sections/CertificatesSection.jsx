@@ -29,7 +29,7 @@ const CertificatesSection = () => {
     {
       cover: "./assets/certificates/cover/tambalin.webp",
       certificate: "./assets/certificates/tambalin.webp",
-      title: "Sertifikat KMI AWARD XIV",
+      title: "Sertifikat Juara 5 KMI AWARD XIV",
       caption:
         "Penghargaan KMI merupakan bentuk pengakuan atas usaha mahasiswa dalam P2MW 2023. Peserta harus memamerkan produk utama mereka di KMI Expo XIV 2023. Penjurian akan dilakukan di setiap stan, yang disusun berdasarkan kategori bisnis.",
       year: "2023",
