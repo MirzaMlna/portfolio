@@ -82,7 +82,7 @@ const AboutSection = () => {
           className="my-3 mx-auto justify-content-end align-items-end d-flex"
           onClick={() => navigate("/resume")}
         >
-          Selanjutnya &rarr;
+          Lanjut &rarr;
         </Button>
       </HoverScaleWrapper>
     </AppSection>

@@ -50,10 +50,18 @@ const AppNavbar = () => {
           </Nav>
           <Nav className="ms-auto">
             <NavDropdown active title="Media Sosial" id="appNavSocialDropdown">
-              <NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() =>
+                  window.open("https://www.instagram.com/mirza_mlna", "_blank")
+                }
+              >
                 <i className="bi bi-instagram"></i> Instagram
               </NavDropdown.Item>
-              <NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() =>
+                  window.open("https://www.tiktok.com/@maulana.mirza", "_blank")
+                }
+              >
                 <i className="bi bi-tiktok"></i> Tiktok
               </NavDropdown.Item>
             </NavDropdown>

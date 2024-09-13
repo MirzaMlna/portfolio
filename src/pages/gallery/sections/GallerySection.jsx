@@ -72,21 +72,17 @@ const GallerySection = () => {
               <Button
                 variant="dark"
                 size="lg"
-                onClick={() => navigate("/resume")}
+                onClick={() => navigate("/certificates")}
               >
-                &larr; Back
+                &larr; Kembali
               </Button>
             </HoverScaleWrapper>
           </Col>
 
           <Col className="d-flex justify-content-end">
             <HoverScaleWrapper>
-              <Button
-                variant="dark"
-                size="lg"
-                onClick={() => navigate("/next-page")}
-              >
-                Next Page &rarr;
+              <Button variant="dark" size="lg" onClick={() => navigate("/")}>
+                Lanjut &rarr;
               </Button>
             </HoverScaleWrapper>
           </Col>

@@ -140,7 +140,7 @@ const ResumeSection = () => {
                 size="lg"
                 onClick={() => navigate("/certificates")}
               >
-                Selanjutnya &rarr;
+                Lanjut &rarr;
               </Button>
             </HoverScaleWrapper>
           </Col>

@@ -132,7 +132,7 @@ const CertificatesSection = () => {
                 size="lg"
                 onClick={() => navigate("/gallery")}
               >
-                Selanjutnya &rarr;
+                Lanjut &rarr;
               </Button>
             </HoverScaleWrapper>
           </Col>
