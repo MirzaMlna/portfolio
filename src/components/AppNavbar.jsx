@@ -9,7 +9,7 @@ const AppNavbar = () => {
   const resumePage = () => navigate("/resume");
   const certificatesPage = () => navigate("/certificates");
   const galleryPage = () => navigate("/gallery");
-  const projectsPage = () => navigate("/projects");
+  // const projectsPage = () => navigate("/projects");
 
   return (
     <Navbar
@@ -42,11 +42,11 @@ const AppNavbar = () => {
                 Galeri
               </Nav.Link>
             </HoverScaleWrapper>
-            <HoverScaleWrapper>
+            {/* <HoverScaleWrapper>
               <Nav.Link active onClick={projectsPage}>
                 Projek Saya
               </Nav.Link>
-            </HoverScaleWrapper>
+            </HoverScaleWrapper> */}
           </Nav>
           <Nav className="ms-auto">
             <NavDropdown active title="Media Sosial" id="appNavSocialDropdown">
