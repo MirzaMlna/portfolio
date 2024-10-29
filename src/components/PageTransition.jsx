@@ -50,7 +50,6 @@ const PageTransition = ({ children }) => {
   );
 };
 
-// Menambahkan PropTypes untuk memvalidasi props
 PageTransition.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.shape({

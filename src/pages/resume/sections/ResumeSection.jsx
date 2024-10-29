@@ -50,8 +50,8 @@ const ResumeSection = () => {
             <ul>
               <li className="fw-bold">Partai Amanat Nasional (2023)</li>
               <p>
-                As A Team of IT experts, Create A Quick Count Application Using
-                Laravel
+                Sebagai Tim Ahli IT, Khususnya Front End Developer Aplikasi
+                Quick Count Partai PAN Menggunakan Laravel.
               </p>
             </ul>
           </Col>

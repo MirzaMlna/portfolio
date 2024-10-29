@@ -42,6 +42,15 @@ const CertificatesSection = () => {
         "P2MW merupakan program pengembangan usaha bagi mahasiswa yang telah memiliki usaha melalui bantuan dana pengembangan dan pembinaan dengan memberikan pendampingan dan pelatihan usaha (coaching) kepada mahasiswa peserta P2MW.",
       year: "2023",
     },
+    {
+      cover: "./assets/certificates/cover/bpsdmp.webp",
+      certificate: "./assets/certificates/bpsdmp.webp",
+      title:
+        "Sertifikat Junior Graphic Design dari Badan Nasional Sertifikasi Profesi",
+      caption:
+        "BNSP merupakan kepanjangan dari Badan Nasional Sertifikasi Kompetensi. (BNSP) merupakan badan nasional independen yang memiliki tanggung jawab langsung pada Kepala Negara.",
+      year: "2024",
+    },
   ];
 
   const [selectedCertificate, setSelectedCertificate] = useState(null);
