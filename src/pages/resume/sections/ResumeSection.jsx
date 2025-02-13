@@ -55,10 +55,8 @@ const ResumeSection = () => {
                 Sebagai Tim Ahli Bidang IT, Khususnya Front End Developer
                 Aplikasi Quick Count Partai PAN Menggunakan Laravel.
               </p>
-              <li className="fw-bold">
-                Tim Pemenangan Provinsi Muhidin Hasnur (2024)
-              </li>
-              <p>Sebagai Tim Ahli Bidang IT.</p>
+              <li className="fw-bold">Muhidin Hasnur Official Team (2024)</li>
+              <p>Sebagai Staff Ahli Bidang IT.</p>
               <li className="fw-bold">
                 TP PKK Provinsi Kalimantan Selatan (2025)
               </li>
