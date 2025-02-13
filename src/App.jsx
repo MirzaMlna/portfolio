@@ -5,9 +5,10 @@ import FooterSection from "./pages/footer/FooterSection";
 import HomePage from "./pages/home/HomePage";
 import ResumePage from "./pages/resume/ResumePage";
 import ScrollToTop from "./components/ScrollToTop";
-import CertificatesSection from "./pages/certificates/sections/CertificatesSection";
-import GallerySection from "./pages/gallery/sections/GallerySection";
+import CertificatesPage from "./pages/certificates/CertificatesPage";
+import GalleryPage from "./pages/gallery/GalleryPage";
 import NotFound from "./pages/NotFound";
+import ProjectPage from "./pages/project/ProjectsPage";
 
 function App() {
   return (
@@ -19,11 +20,9 @@ function App() {
           <Route path={"*"} element={<NotFound />}></Route>
           <Route path={"/"} element={<HomePage />}></Route>
           <Route path={"/resume"} element={<ResumePage />}></Route>
-          <Route
-            path={"/certificates"}
-            element={<CertificatesSection />}
-          ></Route>
-          <Route path={"/gallery"} element={<GallerySection />}></Route>
+          <Route path={"/certificates"} element={<CertificatesPage />}></Route>
+          <Route path={"/gallery"} element={<GalleryPage />}></Route>
+          <Route path={"/projects"} element={<ProjectPage />}></Route>
         </Routes>
       </Router>
       <FooterSection />

@@ -23,10 +23,6 @@ const ResumeSection = () => {
               </li>
               <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
               <li className="fw-bold">
-                Ketua Pelaksana Graphic Design Workshop (2024)
-              </li>
-              <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
-              <li className="fw-bold">
                 Tim Forger - GEMASTIK XV. Divisi Pemrograman Perangkat Lunak
                 (2022)
               </li>
@@ -39,6 +35,12 @@ const ResumeSection = () => {
                 Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
                 Republik Indonesia (Kemendikbudristek RI).
               </p>
+              <li className="fw-bold">Tim Pemenangan Provinsi (2024)</li>
+              <p>Muhidin Hasnur</p>
+              <li className="fw-bold">
+                Ketua Umum UKM KDK Al-Karomah UNISKA (2024/2025)
+              </li>
+              <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
             </ul>
           </Col>
 
@@ -50,9 +52,17 @@ const ResumeSection = () => {
             <ul>
               <li className="fw-bold">Partai Amanat Nasional (2023)</li>
               <p>
-                Sebagai Tim Ahli IT, Khususnya Front End Developer Aplikasi
-                Quick Count Partai PAN Menggunakan Laravel.
+                Sebagai Tim Ahli Bidang IT, Khususnya Front End Developer
+                Aplikasi Quick Count Partai PAN Menggunakan Laravel.
               </p>
+              <li className="fw-bold">
+                Tim Pemenangan Provinsi Muhidin Hasnur (2024)
+              </li>
+              <p>Sebagai Tim Ahli Bidang IT.</p>
+              <li className="fw-bold">
+                TP PKK Provinsi Kalimantan Selatan (2025)
+              </li>
+              <p>Sebagai Staff bidang IT.</p>
             </ul>
           </Col>
 
