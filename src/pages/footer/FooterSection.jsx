@@ -8,7 +8,7 @@ const FooterSection = () => (
           <p className="section-eyebrow text-info">Kontak</p>
           <h2 className="section-heading">Mari membuat sesuatu yang bermanfaat.</h2>
           <p className="text-light-emphasis">
-            Terbuka untuk kolaborasi, pekerjaan, proyek freelance, dan diskusi seputar teknologi serta desain.
+            Terbuka untuk kolaborasi, pekerjaan freelance, dan diskusi seputar teknologi serta desain.
           </p>
         </div>
         <Row className="g-4 justify-content-center">

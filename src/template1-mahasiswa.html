@@ -81,7 +81,6 @@
         >
           <a href="#about" class="hover:text-primary transition">Tentang</a>
           <a href="#skills" class="hover:text-primary transition">Skill</a>
-          <a href="#projects" class="hover:text-primary transition">Proyek</a>
           <a href="#experience" class="hover:text-primary transition"
             >Pengalaman</a
           >
@@ -110,7 +109,6 @@
         <div class="flex flex-col gap-4 text-sm font-semibold text-slate-700">
           <a href="#about" class="mobile-link">Tentang</a>
           <a href="#skills" class="mobile-link">Skill</a>
-          <a href="#projects" class="mobile-link">Proyek</a>
           <a href="#experience" class="mobile-link">Pengalaman</a>
           <a href="#contact" class="mobile-link">Kontak</a>
         </div>
@@ -153,28 +151,28 @@
 
           <p class="mt-6 text-lg text-slate-600 max-w-xl leading-relaxed">
             Portfolio ini menampilkan profil, kemampuan, pengalaman organisasi,
-            dan proyek yang pernah saya kerjakan selama kuliah.
+            dan karya yang pernah saya kerjakan selama kuliah.
           </p>
 
           <div class="mt-8 flex flex-col sm:flex-row gap-4">
             <a
-              href="#projects"
+              href="#contact"
               class="inline-flex justify-center bg-primary text-white px-7 py-3.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-600/25"
             >
-              Lihat Proyek
+              Hubungi Saya
             </a>
             <a
-              href="#contact"
+              href="#experience"
               class="inline-flex justify-center bg-white text-dark px-7 py-3.5 rounded-full font-bold border border-slate-200 hover:border-primary hover:text-primary transition"
             >
-              Kontak Saya
+              Lihat Pengalaman
             </a>
           </div>
 
           <div class="mt-10 grid grid-cols-3 gap-4 max-w-md">
             <div>
               <h3 class="text-3xl font-extrabold text-dark">10+</h3>
-              <p class="text-sm text-slate-500">Proyek</p>
+              <p class="text-sm text-slate-500">Karya</p>
             </div>
             <div>
               <h3 class="text-3xl font-extrabold text-dark">3+</h3>
@@ -240,7 +238,7 @@
           </h2>
           <p class="text-slate-600 leading-relaxed mb-5">
             Saya adalah mahasiswa yang senang mengeksplorasi hal baru,
-            mengerjakan proyek kreatif, mengikuti kegiatan organisasi, dan
+            membuat karya kreatif, mengikuti kegiatan organisasi, dan
             membangun solusi sederhana yang bermanfaat.
           </p>
           <p class="text-slate-600 leading-relaxed">
@@ -256,7 +254,7 @@
             <div class="text-3xl mb-4">🎯</div>
             <h3 class="font-extrabold text-dark text-lg mb-2">Fokus</h3>
             <p class="text-slate-600 text-sm leading-relaxed">
-              Belajar konsisten, membangun proyek, dan mengembangkan kemampuan
+              Belajar konsisten, membuat karya, dan mengembangkan kemampuan
               profesional.
             </p>
           </div>
@@ -267,7 +265,7 @@
             <h3 class="font-extrabold text-dark text-lg mb-2">Tujuan</h3>
             <p class="text-slate-600 text-sm leading-relaxed">
               Mendapatkan pengalaman nyata melalui magang, kolaborasi, dan
-              proyek freelance.
+              pekerjaan freelance.
             </p>
           </div>
           <div
@@ -343,136 +341,6 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8">
-        <div
-          class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 reveal"
-        >
-          <div>
-            <p class="text-primary font-bold mb-3">Portfolio</p>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-dark mb-4">
-              Proyek Pilihan
-            </h2>
-            <p class="text-slate-600 max-w-2xl">
-              Ganti isi kartu ini dengan proyek kuliah, tugas akhir, desain,
-              aplikasi, karya organisasi, atau proyek freelance kamu.
-            </p>
-          </div>
-
-          <div class="flex gap-3 flex-wrap">
-            <button class="filter-btn active-filter" data-filter="all">
-              Semua
-            </button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="design">Design</button>
-            <button class="filter-btn" data-filter="academic">Akademik</button>
-          </div>
-        </div>
-
-        <div
-          class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-7"
-          id="projectGrid"
-        >
-          <article class="project-card reveal" data-category="web">
-            <div class="project-image from-blue-500 to-cyan-400">Web</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                Landing Page Organisasi
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Website sederhana untuk memperkenalkan profil, program kerja,
-                dan kontak organisasi mahasiswa.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="design">
-            <div class="project-image from-purple-500 to-pink-400">UI</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                Desain Aplikasi Kampus
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Konsep UI aplikasi informasi kampus dengan tampilan modern,
-                rapi, dan mudah digunakan.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="academic">
-            <div class="project-image from-amber-500 to-orange-400">Riset</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                Mini Research Project
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Penelitian kecil mengenai perilaku mahasiswa dalam menggunakan
-                teknologi digital.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="web">
-            <div class="project-image from-emerald-500 to-teal-400">App</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                To-Do List App
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Aplikasi manajemen tugas sederhana menggunakan HTML, CSS, dan
-                JavaScript.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="design">
-            <div class="project-image from-rose-500 to-red-400">Poster</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                Poster Event Mahasiswa
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Desain media promosi untuk seminar, webinar, dan kegiatan
-                organisasi kampus.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="academic">
-            <div class="project-image from-slate-700 to-slate-500">Paper</div>
-            <div class="p-6">
-              <h3 class="text-xl font-extrabold text-dark mb-2">
-                Artikel Ilmiah
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                Tulisan akademik mengenai isu pendidikan, teknologi, atau sosial
-                sesuai bidang kuliah.
-              </p>
-              <a href="#" class="font-bold text-primary hover:underline"
-                >Lihat Detail →</a
-              >
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- Experience -->
     <section id="experience" class="py-24 bg-slate-50">
       <div class="max-w-4xl mx-auto px-5 sm:px-8">
@@ -539,7 +407,7 @@
                 class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3"
               >
                 <h3 class="text-xl font-extrabold text-dark">
-                  Freelance Project
+                  Freelance Work
                 </h3>
                 <span class="text-sm font-bold text-primary">2023 - 2024</span>
               </div>
@@ -686,37 +554,6 @@
       window.addEventListener("scroll", revealOnScroll);
       window.addEventListener("load", revealOnScroll);
 
-      // Project Filter
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const projectCards = document.querySelectorAll(".project-card");
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          filterButtons.forEach((btn) => btn.classList.remove("active-filter"));
-          button.classList.add("active-filter");
-
-          const filter = button.getAttribute("data-filter");
-
-          projectCards.forEach((card) => {
-            const category = card.getAttribute("data-category");
-
-            if (filter === "all" || filter === category) {
-              card.style.display = "block";
-              setTimeout(() => {
-                card.style.opacity = "1";
-                card.style.transform = "translateY(0)";
-              }, 100);
-            } else {
-              card.style.opacity = "0";
-              card.style.transform = "translateY(20px)";
-              setTimeout(() => {
-                card.style.display = "none";
-              }, 250);
-            }
-          });
-        });
-      });
-
       // Contact Form Demo
       const contactForm = document.getElementById("contactForm");
       const formMessage = document.getElementById("formMessage");
@@ -748,25 +585,6 @@
       document.querySelectorAll(".skill").forEach((skill) => {
         skill.className =
           "inline-flex px-4 py-2 bg-blue-50 text-primary rounded-full text-sm font-bold border border-blue-100";
-      });
-
-      document.querySelectorAll(".filter-btn").forEach((btn) => {
-        btn.className +=
-          " px-5 py-2.5 rounded-full border border-slate-200 font-bold text-sm hover:border-primary hover:text-primary transition";
-      });
-
-      document.querySelectorAll(".active-filter").forEach((btn) => {
-        btn.classList.add("bg-primary", "text-white", "border-primary");
-      });
-
-      document.querySelectorAll(".project-card").forEach((card) => {
-        card.className +=
-          " bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-soft transition duration-300";
-      });
-
-      document.querySelectorAll(".project-image").forEach((image) => {
-        image.className +=
-          " h-48 bg-gradient-to-br flex items-center justify-center text-white text-4xl font-extrabold";
       });
 
       document.querySelectorAll(".timeline-item").forEach((item) => {

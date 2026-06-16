@@ -45,13 +45,16 @@ const instagramGallery = [
   },
   {
     instagramUrl:
+      "https://www.instagram.com/p/C7FCC2-Pi27/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    instagramUrl:
       "https://www.instagram.com/p/C7FCLcsvrBB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
     instagramUrl:
       "https://www.instagram.com/reel/DR2BJ6xEyLs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
-
 ];
 
 const getInstagramEmbedUrl = (url) => {

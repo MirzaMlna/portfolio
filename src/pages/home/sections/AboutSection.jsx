@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: "bi-people",
     title: "Kepemimpinan",
-    text: "Berpengalaman memimpin organisasi, tim proyek, dan kegiatan mahasiswa.",
+    text: "Berpengalaman memimpin organisasi, tim kreatif, dan kegiatan mahasiswa.",
   },
   {
     icon: "bi-camera-reels",
@@ -44,7 +44,7 @@ const AboutSection = () => (
           <Col lg={6}>
             <FadeInWrapper>
               <p className="section-eyebrow">Tentang Saya</p>
-              <h2 className="section-heading">Developer muda yang tumbuh melalui proyek dan pengalaman nyata.</h2>
+              <h2 className="section-heading">Developer muda yang tumbuh melalui pengalaman nyata.</h2>
               <p className="section-copy">
                 Saya menikmati proses mengubah ide menjadi antarmuka yang menarik,
                 ramah pengguna, dan bermanfaat. Pengalaman freelance, kompetisi
@@ -82,7 +82,7 @@ const AboutSection = () => (
           <h2 className="section-heading">Keahlian dan perangkat yang saya gunakan</h2>
           <p className="section-copy">
             Kemampuan teknologi dan kreatif visual yang terus saya kembangkan
-            melalui proyek akademik, organisasi, dan profesional.
+            melalui pengalaman akademik, organisasi, dan profesional.
           </p>
         </div>
         <div className="skill-list justify-content-center mt-4">
