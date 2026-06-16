@@ -465,15 +465,6 @@ a {
   font-weight: 800;
 }
 
-.project-visual {
-  display: grid;
-  min-height: 250px;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  font-size: 3rem;
-}
-
 .modal-content {
   overflow: hidden;
   border: 0;

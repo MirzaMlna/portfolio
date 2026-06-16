@@ -3,7 +3,6 @@ import HomePage from "./pages/home/HomePage";
 import ResumePage from "./pages/resume/ResumePage";
 import CertificatesPage from "./pages/certificates/CertificatesPage";
 import GalleryPage from "./pages/gallery/GalleryPage";
-import ProjectsPage from "./pages/project/ProjectsPage";
 import FooterSection from "./pages/footer/FooterSection";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <ResumePage />
         <CertificatesPage />
         <GalleryPage />
-        <ProjectsPage />
       </main>
       <FooterSection />
     </div>

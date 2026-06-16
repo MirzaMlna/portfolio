@@ -51,15 +51,7 @@ const instagramGallery = [
     instagramUrl:
       "https://www.instagram.com/reel/DR2BJ6xEyLs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
-  {
-    instagramUrl: "",
-  },
-  {
-    instagramUrl: "",
-  },
-  {
-    instagramUrl: "",
-  },
+
 ];
 
 const getInstagramEmbedUrl = (url) => {

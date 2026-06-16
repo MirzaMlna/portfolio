@@ -9,7 +9,7 @@ const HeroSection = () => (
           <FadeInWrapper>
             <div className="availability-badge">
               <span className="availability-dot"></span>
-              Terbuka untuk kolaborasi dan proyek baru
+              Terbuka untuk kolaborasi baru
             </div>
             <h1 className="hero-title">
               Halo, saya <span className="gradient-text">Muhammad Mirza Maulana</span>.
@@ -22,11 +22,11 @@ const HeroSection = () => (
               yang memadukan teknologi, visual, dan pengalaman organisasi.
             </p>
             <div className="hero-actions">
-              <a href="#projects" className="primary-button">
-                Lihat Proyek <i className="bi bi-arrow-right"></i>
+              <a href="#contact" className="primary-button">
+                Hubungi Saya <i className="bi bi-arrow-right"></i>
               </a>
-              <a href="#contact" className="secondary-button">
-                Kontak Saya
+              <a href="#resume" className="secondary-button">
+                Lihat Resume
               </a>
             </div>
             <div className="hero-stats">

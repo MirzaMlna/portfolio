@@ -6,7 +6,6 @@ const navItems = [
   ["#resume", "Resume"],
   ["#certificates", "Sertifikat"],
   ["#gallery", "Galeri"],
-  ["#projects", "Proyek"],
 ];
 
 const AppNavbar = () => {
