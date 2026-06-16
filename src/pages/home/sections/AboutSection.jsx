@@ -1,92 +1,96 @@
-import { Col, Row, Image, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-
-import AppSection from "../../../components/AppSection";
+import { Col, Container, Row } from "react-bootstrap";
 import FadeInWrapper from "../../../components/motionWrappers/FadeInWrapper";
-import HoverScaleWrapper from "../../../components/motionWrappers/HoverScaleWrapper";
 
-const AboutSection = () => {
-  const navigate = useNavigate();
+const highlights = [
+  {
+    icon: "bi-code-slash",
+    title: "Teknologi",
+    text: "Mengembangkan antarmuka web dengan React, Laravel, dan teknologi modern.",
+  },
+  {
+    icon: "bi-people",
+    title: "Kepemimpinan",
+    text: "Berpengalaman memimpin organisasi, tim proyek, dan kegiatan mahasiswa.",
+  },
+  {
+    icon: "bi-camera-reels",
+    title: "Kreatif Visual",
+    text: "Menghasilkan karya fotografi, videografi, video editing, dan desain grafis untuk berbagai kebutuhan.",
+  },
+];
 
-  return (
-    <AppSection
-      id="AboutSection"
-      icon="bi-person-lines-fill"
-      title="Tentang Saya"
-    >
-      <Row>
-        <Col md={3} className="mb-4 mb-lg-0">
-          <FadeInWrapper>
-            <Image
-              src="mirza.webp"
-              alt="Mirza's Photo"
-              className="shadow"
-              fluid
-              rounded
-            />
-          </FadeInWrapper>
-        </Col>
-        <Col md={9}>
-          <Row>
-            <Col md={6}>
-              <ul style={{ listStyleType: "none", padding: 0 }}>
-                <li className="mb-4 fs-5">
-                  <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> Kota: </span>
-                  Banjarmasin, Indonesia
-                </li>
-                <li className="mb-4 fs-5">
-                  <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> Usia: </span>
-                  20
-                </li>
-              </ul>
-            </Col>
-            <Col md={6}>
-              <ul style={{ listStyleType: "none", padding: 0 }}>
-                <li className="mb-4 fs-5">
-                  <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> Degree: </span>
-                  Beginner
-                </li>
-                <li className="fs-5">
-                  <i className="bi bi-caret-right text-mirza-primary"></i>
-                  <span className="fw-bold"> Email: </span>
-                  mirzamaulana713@gmail.com
-                </li>
-              </ul>
-            </Col>
-          </Row>
-          <hr className="text-mirza-primary" />
-          <p className="fs-5">
-            Halo👋 Nama saya <b>Muhammad Mirza Maulana</b>, dan saya adalah
-            seorang <b className="fst-italic">front-end developer</b> yang
-            antusias. Saya telah mendapatkan pengalaman dalam beberapa
-            teknologi, termasuk <b>Laravel dan React Vite</b> untuk pengembangan
-            web, serta <b>Flutter</b> untuk pengembangan aplikasi mobile.
-            Menjadi seorang developer front-end memberikan saya kepuasan yang
-            besar karena memungkinkan saya untuk menggabungkan kreativitas
-            dengan teknologi, menciptakan antarmuka yang menarik secara visual
-            dan ramah pengguna. Saya bangga dengan pekerjaan freelance saya dan
-            pencapaian yang telah saya raih di tingkat lokal dan nasional. Saya
-            sangat bersemangat untuk berkolaborasi dengan tim yang berbagi
-            semangat yang sama dalam menghadirkan pengalaman digital yang luar
-            biasa.
+const skills = [
+  "Fotografi",
+  "Videografi",
+  "Video Editing",
+  "CapCut",
+  "Desain Grafis",
+  "Figma",
+  "Canva",
+  "Adobe Illustrator",
+  "React Vite",
+  "Laravel",
+  "JavaScript",
+  "PHP",
+  "Bootstrap",
+  "Tailwind CSS",
+];
+
+const AboutSection = () => (
+  <>
+    <section id="about" className="content-section white">
+      <Container>
+        <Row className="align-items-center g-5">
+          <Col lg={6}>
+            <FadeInWrapper>
+              <p className="section-eyebrow">Tentang Saya</p>
+              <h2 className="section-heading">Developer muda yang tumbuh melalui proyek dan pengalaman nyata.</h2>
+              <p className="section-copy">
+                Saya menikmati proses mengubah ide menjadi antarmuka yang menarik,
+                ramah pengguna, dan bermanfaat. Pengalaman freelance, kompetisi
+                nasional, organisasi, dan pekerjaan profesional membentuk cara saya
+                bekerja secara kreatif sekaligus terstruktur.
+              </p>
+              <a href="#resume" className="primary-button mt-3">
+                Lihat Resume <i className="bi bi-arrow-right"></i>
+              </a>
+            </FadeInWrapper>
+          </Col>
+          <Col lg={6}>
+            <Row className="g-4">
+              {highlights.map((item) => (
+                <Col md={item.title === "Kreatif Visual" ? 12 : 6} key={item.title}>
+                  <FadeInWrapper>
+                    <article className="info-card">
+                      <div className="info-icon"><i className={`bi ${item.icon}`}></i></div>
+                      <h3>{item.title}</h3>
+                      <p>{item.text}</p>
+                    </article>
+                  </FadeInWrapper>
+                </Col>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+
+    <section id="skills" className="content-section">
+      <Container>
+        <div className="text-center mx-auto" style={{ maxWidth: "720px" }}>
+          <p className="section-eyebrow">Kemampuan</p>
+          <h2 className="section-heading">Keahlian dan perangkat yang saya gunakan</h2>
+          <p className="section-copy">
+            Kemampuan teknologi dan kreatif visual yang terus saya kembangkan
+            melalui proyek akademik, organisasi, dan profesional.
           </p>
-        </Col>
-      </Row>
-      <HoverScaleWrapper>
-        <Button
-          variant="dark"
-          size="lg"
-          className="my-3 mx-auto justify-content-end align-items-end d-flex"
-          onClick={() => navigate("/resume")}
-        >
-          Lanjut &rarr;
-        </Button>
-      </HoverScaleWrapper>
-    </AppSection>
-  );
-};
+        </div>
+        <div className="skill-list justify-content-center mt-4">
+          {skills.map((skill) => <span className="skill-pill" key={skill}>{skill}</span>)}
+        </div>
+      </Container>
+    </section>
+  </>
+);
 
 export default AboutSection;

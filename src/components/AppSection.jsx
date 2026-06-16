@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Container } from "react-bootstrap";
 
 const AppSection = ({
   id = "null",
@@ -7,12 +8,16 @@ const AppSection = ({
   children,
 }) => {
   return (
-    <section id={id} className="px-2 px-md-5 py-5">
-      <div className="display-6 fw-bold text-start mb-5">
-        <i className={`bi ${icon} text-mirza-primary`}></i> {title}
-        <div className="section-title-line"></div>
-      </div>
-      {children}
+    <section id={id} className="page-section">
+      <Container>
+        <div className="page-hero-heading text-center mb-5">
+          <p className="section-eyebrow">
+            <i className={`bi ${icon} me-2`}></i>Portfolio Mirza
+          </p>
+          <h1 className="section-heading">{title}</h1>
+        </div>
+        {children}
+      </Container>
     </section>
   );
 };

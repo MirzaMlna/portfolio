@@ -1,12 +1,5 @@
-import NotFound from "../NotFound";
-// import ProjectSection from "./sections/ProjectSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
-const ResumePage = () => {
-  return (
-    <>
-      <NotFound />
-    </>
-  );
-};
+const ProjectsPage = () => <ProjectsSection />;
 
-export default ResumePage;
+export default ProjectsPage;

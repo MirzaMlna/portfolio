@@ -1,71 +1,41 @@
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
-import HoverScaleWrapper from "./motionWrappers/HoverScaleWrapper";
+const navItems = [
+  ["#home", "Beranda"],
+  ["#resume", "Resume"],
+  ["#certificates", "Sertifikat"],
+  ["#gallery", "Galeri"],
+  ["#projects", "Proyek"],
+];
 
 const AppNavbar = () => {
-  const navigate = useNavigate();
-  const homePage = () => navigate("/");
-  const resumePage = () => navigate("/resume");
-  const certificatesPage = () => navigate("/certificates");
-  const galleryPage = () => navigate("/gallery");
-  const projectsPage = () => navigate("/projects");
+  const [expanded, setExpanded] = useState(false);
+  const closeMenu = () => setExpanded(false);
 
   return (
     <Navbar
       expand="lg"
-      className="sticky-top bg-mirza-primary"
-      data-bs-theme="dark"
+      expanded={expanded}
+      onToggle={setExpanded}
+      className="app-navbar"
     >
       <Container>
-        <Navbar.Brand className="fw-bold">Muhammad Mirza Maulana</Navbar.Brand>
+        <Navbar.Brand href="#home" onClick={closeMenu}>
+          Mirza<span className="brand-accent">folio.</span>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="appNavbar" />
         <Navbar.Collapse id="appNavbar">
-          <Nav className="mx-auto">
-            <HoverScaleWrapper>
-              <Nav.Link active onClick={homePage}>
-                Beranda
+          <Nav className="ms-auto me-lg-4 gap-lg-3">
+            {navItems.map(([href, label]) => (
+              <Nav.Link href={href} onClick={closeMenu} key={href}>
+                {label}
               </Nav.Link>
-            </HoverScaleWrapper>
-            <HoverScaleWrapper>
-              <Nav.Link active onClick={resumePage}>
-                Resume
-              </Nav.Link>
-            </HoverScaleWrapper>
-            <HoverScaleWrapper>
-              <Nav.Link active onClick={certificatesPage}>
-                Sertifikat
-              </Nav.Link>
-            </HoverScaleWrapper>
-            <HoverScaleWrapper>
-              <Nav.Link active onClick={galleryPage}>
-                Galeri
-              </Nav.Link>
-            </HoverScaleWrapper>
-            <HoverScaleWrapper>
-              <Nav.Link active onClick={projectsPage}>
-                Projek Saya
-              </Nav.Link>
-            </HoverScaleWrapper>
+            ))}
           </Nav>
-          <Nav className="ms-auto">
-            <NavDropdown active title="Media Sosial" id="appNavSocialDropdown">
-              <NavDropdown.Item
-                onClick={() =>
-                  window.open("https://www.instagram.com/mirza_mlna", "_blank")
-                }
-              >
-                <i className="bi bi-instagram"></i> Instagram
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                onClick={() =>
-                  window.open("https://www.tiktok.com/@maulana.mirza", "_blank")
-                }
-              >
-                <i className="bi bi-tiktok"></i> Tiktok
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
+          <a className="navbar-contact" href="#contact" onClick={closeMenu}>
+            Hubungi Saya
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>

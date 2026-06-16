@@ -1,161 +1,124 @@
-import { Button, Row, Col } from "react-bootstrap"; // Import React Bootstrap
-import { useNavigate } from "react-router-dom";
-
+import { Col, Row } from "react-bootstrap";
 import AppSection from "../../../components/AppSection";
-import HoverScaleWrapper from "../../../components/motionWrappers/HoverScaleWrapper";
 import FadeInWrapper from "../../../components/motionWrappers/FadeInWrapper";
 
-const ResumeSection = () => {
-  const navigate = useNavigate();
+const experiences = [
+  [
+    "2026",
+    "Fotografer Gubernur Kalimantan Selatan",
+    "Biro Administrasi Pimpinan Setda Provinsi Kalimantan Selatan.",
+  ],
+  [
+    "2026",
+    "Ketua Pelaksana Seminar Kepemudaan",
+    "DPW Partai Amanat Nasional Provinsi Kalimantan Selatan.",
+  ],
+  ["2025", "Staff Bidang Multimedia", "TP PKK Provinsi Kalimantan Selatan."],
+  [
+    "2024 - 2025",
+    "Ketua Umum UKM KDK Al-Karomah",
+    "Memimpin organisasi mahasiswa dan mengoordinasikan program kerja.",
+  ],
+  [
+    "2024",
+    "Staff Ahli Bidang IT & Multimedia Tim Pemenangan",
+    "Muhidin Hasnur Official Team",
+  ],
+  ["2023 - 2024", "Kepala Divisi Opini & Media", "UKM KDK Al-Karomah."],
+  [
+    "2023",
+    "Front-End Developer",
+    "DPW Partai Amanat Nasional Provinsi Kalimantan Selatan.",
+  ],
+  [
+    "2023",
+    "Mobile Front-End Developer Tambalin",
+    "P2MW | KMI EXPO XIV Universitas Brawijaya, Bali.",
+  ],
+  [
+    "2022",
+    "Tim Forger - GEMASTIK XV",
+    "Divisi Pemrograman Perangkat Lunak tingkat nasional di Universitas Brawijaya.",
+  ],
+];
 
-  return (
-    <FadeInWrapper>
-      <AppSection id="ResumeSection" icon="bi-caret-right" title="Resume">
-        <Row className="mb-4">
-          <Col md={5} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Pengalaman Tim & Organisasi
-            </h3>
-            <ul>
-              <li className="fw-bold">
-                Kepala Divisi Opini & Media (2023 - 2024)
-              </li>
-              <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
-              <li className="fw-bold">
-                Tim Forger - GEMASTIK XV. Divisi Pemrograman Perangkat Lunak
-                (2022)
-              </li>
-              <p>Universitas Brawijaya</p>
-              <li className="fw-bold">
-                Tambalin - Sebagai Mobile Front End Developer (2023)
-              </li>
-              <p>
-                Direktorat Jenderal Pendidikan Tinggi, Riset dan Teknologi
-                Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi
-                Republik Indonesia (Kemendikbudristek RI).
-              </p>
-              <li className="fw-bold">Tim Pemenangan Provinsi (2024)</li>
-              <p>Muhidin Hasnur</p>
-              <li className="fw-bold">
-                Ketua Umum UKM KDK Al-Karomah UNISKA (2024/2025)
-              </li>
-              <p>Kajian Dakwah Kampus Al-Karomah UNISKA.</p>
-            </ul>
-          </Col>
+const cards = [
+  {
+    icon: "bi-mortarboard",
+    title: "Pendidikan",
+    lines: [
+      "S1 Teknik Informatika, UNISKA MAB (2022 - sekarang)",
+      "SMAN 11 Banjarmasin, Matematika & IPA (2019 - 2022)",
+    ],
+  },
+  {
+    icon: "bi-trophy",
+    title: "Pencapaian",
+    lines: [
+      "Juara 5 KMI Award XIV kategori Bisnis Digital (2023)",
+      "20 Besar Stand Up Competition KMI Expo XIV, Bali (2023)",
+    ],
+  },
+  {
+    icon: "bi-tools",
+    title: "Keahlian",
+    lines: [
+      "Fotografer dan videografer",
+      "Alat Editing Video: CapCut",
+      "Alat Desain: Figma, Canva, dan Adobe Illustrator",
+      "HTML, CSS, JavaScript, PHP, React, Laravel, Bootstrap, dan Tailwind",
+      "Public Speaking",
+    ],
+  },
+];
 
-          <Col md={4} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Pengalaman Kerja
-            </h3>
-            <ul>
-              <li className="fw-bold">Partai Amanat Nasional (2023)</li>
-              <p>
-                Sebagai Tim Ahli Bidang IT, Khususnya Front End Developer
-                Aplikasi Quick Count Partai PAN Menggunakan Laravel.
-              </p>
-              <li className="fw-bold">Muhidin Hasnur Official Team (2024)</li>
-              <p>Sebagai Staff Ahli Bidang IT.</p>
-              <li className="fw-bold">
-                TP PKK Provinsi Kalimantan Selatan (2025)
-              </li>
-              <p>Sebagai Staff bidang IT.</p>
-            </ul>
-          </Col>
-
-          <Col md={3} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Pengalaman Pribadi
-            </h3>
-            <ul>
-              <li className="fw-bold">
-                Stand Up Comedy di Depan 4000 Mata Saat Menjadi Mahasiswa Baru
-                Dalam Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (2022)
-              </li>
-              <p>Pengenalan Kehidupan Kampus Mahasiswa Baru (PKKMB) 2022</p>
-              <li className="fw-bold">
-                Freelancer Projek Aplikasi & Tugas (2022 - Present)
-              </li>
-              <p>Mirza Project And Assignment</p>
-            </ul>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col md={4} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>Keahlian
-            </h3>
-            <ul>
-              <li>Public Speaking</li>
-              <li>HTML/CSS</li>
-              <li>PHP, JavaScript, Dart</li>
-              <li>Bootstrap, Tailwind</li>
-              <li>Laravel, Flutter</li>
-            </ul>
-          </Col>
-
-          <Col md={4} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Pencapaian
-            </h3>
-            <ul>
-              <li className="fw-bold">20 Besar Stand Up Competition (2023)</li>
-              <p>KMI EXPO XIV - Bali.</p>
-              <li className="fw-bold">
-                Meraih juara ke-5 dari 273 kampus Indonesia dalam ajang
-                &raquo;KMI AWARD&laquo; kategori Bisnis Digital tingkat
-                nasional, sekaligus mengukir sejarah UNISKA untuk pertama
-                kalinya menjuarai ajang ini. (2023)
-              </li>
-              <p>KMI EXPO XIV - Bali.</p>
-            </ul>
-          </Col>
-
-          <Col md={4} className="mb-4">
-            <h3>
-              <i className="bi bi-caret-right text-mirza-primary"> </i>
-              Perguruan Tinggi
-            </h3>
-            <ul>
-              <li className="fw-bold">Sekolah Menengah Atas (2019 - 2022)</li>
-              <p>SMAN 11 Banjarmasin (Matematika & IPA)</p>
-              <li className="fw-bold">Universitas (2022 - Present)</li>
-              <p>
-                Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari (Sarjana
-                (S1) Teknik Informatika)
-              </p>
-            </ul>
-          </Col>
-        </Row>
-
-        <Row className="my-3">
-          <Col className="d-flex justify-content-start">
-            <HoverScaleWrapper>
-              <Button variant="dark" size="lg" onClick={() => navigate("/")}>
-                &larr; Kembali
-              </Button>
-            </HoverScaleWrapper>
-          </Col>
-
-          <Col className="d-flex justify-content-end">
-            <HoverScaleWrapper>
-              <Button
-                variant="dark"
-                size="lg"
-                onClick={() => navigate("/certificates")}
-              >
-                Lanjut &rarr;
-              </Button>
-            </HoverScaleWrapper>
-          </Col>
-        </Row>
-      </AppSection>
-    </FadeInWrapper>
-  );
-};
+const ResumeSection = () => (
+  <FadeInWrapper>
+    <AppSection
+      id="resume"
+      icon="bi-person-vcard"
+      title="Resume & Pengalaman"
+    >
+      <Row className="g-5">
+        <Col lg={7}>
+          <p className="section-eyebrow">Perjalanan Profesional</p>
+          <h2 className="h3 fw-bold mb-4">
+            Pengalaman kerja, tim, dan organisasi
+          </h2>
+          <div className="timeline">
+            {experiences.map(([year, title, text]) => (
+              <div className="timeline-item" key={`${year}-${title}`}>
+                <article className="timeline-card">
+                  <span className="year">{year}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </Col>
+        <Col lg={5}>
+          <Row className="g-4">
+            {cards.map((card) => (
+              <Col xs={12} key={card.title}>
+                <article className="info-card">
+                  <div className="info-icon">
+                    <i className={`bi ${card.icon}`}></i>
+                  </div>
+                  <h3>{card.title}</h3>
+                  {card.lines.map((line) => (
+                    <p className="mb-2" key={line}>
+                      {line}
+                    </p>
+                  ))}
+                </article>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+    </AppSection>
+  </FadeInWrapper>
+);
 
 export default ResumeSection;

@@ -1,77 +1,57 @@
-import { useState, useEffect, useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import FadeInWrapper from "../../../components/motionWrappers/FadeInWrapper";
 
-const texts = ["Front End Developer", "Freelancer", "Graphic Designer"];
-const typingSpeed = 150;
-const deletingSpeed = 100;
-const pauseBetweenWords = 1000;
-
-const HeroSection = () => {
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [currentCharIndex, setCurrentCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const timeoutRef = useRef(null);
-
-  useEffect(() => {
-    const handleTyping = () => {
-      const currentText = texts[currentTextIndex];
-
-      if (!isDeleting && currentCharIndex < currentText.length) {
-        // Typing characters
-        setCurrentCharIndex((prev) => prev + 1);
-        timeoutRef.current = setTimeout(handleTyping, typingSpeed);
-      } else if (isDeleting && currentCharIndex > 0) {
-        // Deleting characters
-        setCurrentCharIndex((prev) => prev - 1);
-        timeoutRef.current = setTimeout(handleTyping, deletingSpeed);
-      } else if (!isDeleting && currentCharIndex === currentText.length) {
-        // Finished typing, pause before deleting
-        timeoutRef.current = setTimeout(
-          () => setIsDeleting(true),
-          pauseBetweenWords
-        );
-      } else if (isDeleting && currentCharIndex === 0) {
-        // Finished deleting, move to the next text
-        setIsDeleting(false);
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-      }
-    };
-
-    // Start the typing effect
-    timeoutRef.current = setTimeout(
-      handleTyping,
-      isDeleting ? deletingSpeed : typingSpeed
-    );
-
-    // Cleanup the timeout on unmount to avoid memory leaks
-    return () => clearTimeout(timeoutRef.current);
-  }, [currentCharIndex, isDeleting, currentTextIndex]);
-
-  return (
-    <section
-      id="HeroSection"
-      className="vh-100 hero-bg d-flex align-items-center justify-content-center shadow mb-5 home-section"
-    >
-      <Container>
-        <Row className="w-100">
-          <Col
-            md={6}
-            className="d-flex flex-column align-items-center justify-content-center text-center"
-          >
-            <div className="display-6 text-light fw-bold">
-              Muhammad Mirza Maulana
+const HeroSection = () => (
+  <section id="home" className="hero-section">
+    <Container className="hero-content">
+      <Row className="align-items-center g-5">
+        <Col lg={7}>
+          <FadeInWrapper>
+            <div className="availability-badge">
+              <span className="availability-dot"></span>
+              Terbuka untuk kolaborasi dan proyek baru
             </div>
-            <br />
-            <div className="text-light fs-3 fw-light">
-              <span id="typewriter" className="font-monospace">
-                {texts[currentTextIndex].substring(0, currentCharIndex)}
-              </span>
+            <h1 className="hero-title">
+              Halo, saya <span className="gradient-text">Muhammad Mirza Maulana</span>.
+              <br />
+              Saya membangun pengalaman digital yang bermakna.
+            </h1>
+            <p className="hero-copy">
+              Mahasiswa Teknik Informatika, front-end developer, fotografer,
+              videografer, video editor, dan desainer grafis dari Banjarmasin
+              yang memadukan teknologi, visual, dan pengalaman organisasi.
+            </p>
+            <div className="hero-actions">
+              <a href="#projects" className="primary-button">
+                Lihat Proyek <i className="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" className="secondary-button">
+                Kontak Saya
+              </a>
             </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
-};
+            <div className="hero-stats">
+              <div className="hero-stat"><strong>3+</strong><span>Bidang keahlian</span></div>
+              <div className="hero-stat"><strong>5+</strong><span>Sertifikat</span></div>
+              <div className="hero-stat"><strong>3+</strong><span>Tahun pengalaman</span></div>
+            </div>
+          </FadeInWrapper>
+        </Col>
+        <Col lg={5}>
+          <FadeInWrapper>
+            <div className="profile-wrap">
+              <div className="profile-card">
+                <img className="profile-image" src="mirza.webp" alt="Muhammad Mirza Maulana" />
+                <div className="profile-meta">
+                  <div><small>Jurusan</small><strong>Teknik Informatika</strong></div>
+                  <div><small>Lokasi</small><strong>Banjarmasin</strong></div>
+                </div>
+              </div>
+            </div>
+          </FadeInWrapper>
+        </Col>
+      </Row>
+    </Container>
+  </section>
+);
 
 export default HeroSection;
